@@ -36,6 +36,8 @@ if($errMsg)
 </form>
 <?php
 require "get_news.inc.php";
+$posts = $news->getNews();
+print_r($posts);
 ?>
 </body>
 </html>

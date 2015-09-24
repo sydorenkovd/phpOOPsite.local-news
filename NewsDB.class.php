@@ -44,9 +44,9 @@ $this->_db->exec($sql) or die($this->_db->lastErrorMsg());
 		return $this->_db->exec($sql);
 		// if(!$res) return false;
 	}
-	private function db2Arr(){
+	private function db2Arr($data){
 		$arr = [];
-		while ($row = $data->fetchArray(SQLite3_ASSOC)) {
+		while ($row = $data->fetchArray(SQLITE3_ASSOC)) {
 		$arr[] = $row;
 		}
 		return $arr;
@@ -58,6 +58,8 @@ FROM msgs, category
 WHERE category.id = msgs.category
 ORDER BY msgs.id DESC";
 $res = $this->_db->query($sql);
+	if(!$res) return false;
+	return $this->db2Arr($res);
 	}
 	function deleteNews($id){
 
