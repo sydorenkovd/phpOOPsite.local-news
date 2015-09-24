@@ -12,6 +12,7 @@ class NewsDB implements INewsDB{
 	function __construct(){
 		$this->_db = new SQLite3(self::DB_NAME);
 		if(filesize(self::DB_NAME) == 0){
+			try{
 			$sql = "CREATE TABLE msgs(
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
 	title TEXT,
@@ -21,19 +22,27 @@ class NewsDB implements INewsDB{
 	datetime INTEGER
 )";
 
-$this->_db->exec($sql) or die($this->_db->lastErrorMsg());
+if(!$this->_db->exec($sql))
+	throw new Exception($this->_db->lastErrorMsg());
+	
 $sql = "CREATE TABLE category(
 	id INTEGER,
 	name TEXT
 )";
-$this->_db->exec($sql) or die($this->_db->lastErrorMsg());
+if(!$this->_db->exec($sql))
+	throw new Exception($this->_db->lastErrorMsg());
 $sql = "INSERT INTO category(id, name)
 SELECT 1 as id, 'Политика' as name
 UNION SELECT 2 as id, 'Культура' as name
 UNION SELECT 3 as id, 'Спорт' as name ";
-$this->_db->exec($sql) or die($this->_db->lastErrorMsg());
-	}
+if(!$this->_db->exec($sql))
+	throw new Exception($this->_db->lastErrorMsg());
+		}catch(Exception $e){
+			// $e->getMessage();
+			echo "Sorry, you try to send request without respect!";
 		}
+	}
+}
 	function __destruct(){
 		unset($this->_db);
 	}
