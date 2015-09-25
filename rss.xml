@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <chanel>
+    <title>News tape</title>
+    <link>http://phpoopsite.local/news/news.php</link>
+    <item>
+      <title>Ukraine become the best ever.</title>
+      <link>#</link>
+      <description><![CDATA[Ukraine and bla bla bla!]]></description>
+      <pubDate>Fri, 25 Sep 2015 12:58:26 +0300</pubDate>
+      <category>Политика</category>
+    </item>
+    <item>
+      <title>Floyd Mayweather</title>
+      <link>#</link>
+      <description><![CDATA[His career is over. It is official! Every one, please pay PPV.]]></description>
+      <pubDate>Fri, 25 Sep 2015 12:57:06 +0300</pubDate>
+      <category>Спорт</category>
+    </item>
+    <item>
+      <title>Floyd Mayweather</title>
+      <link>#</link>
+      <description><![CDATA[His career is over. It is official! Every one, please pay PPV.]]></description>
+      <pubDate>Fri, 25 Sep 2015 12:54:59 +0300</pubDate>
+      <category>Спорт</category>
+    </item>
+    <item>
+      <title>Wrong news</title>
+      <link>#</link>
+      <description><![CDATA[Please, delete this news.]]></description>
+      <pubDate>Thu, 24 Sep 2015 22:19:05 +0300</pubDate>
+      <category>Политика</category>
+    </item>
+    <item>
+      <title>Sport news</title>
+      <link>#</link>
+      <description><![CDATA[Sport is very important part of our life.]]></description>
+      <pubDate>Thu, 24 Sep 2015 22:18:39 +0300</pubDate>
+      <category>Спорт</category>
+    </item>
+    <item>
+      <title>Some news about culture</title>
+      <link>#</link>
+      <description><![CDATA[Some news. Attantion. It is very important]]></description>
+      <pubDate>Thu, 24 Sep 2015 22:18:01 +0300</pubDate>
+      <category>Культура</category>
+    </item>
+    <item>
+      <title>Some very important news</title>
+      <link>#</link>
+      <description><![CDATA[Please, pay attention! The war is over. Good bye!]]></description>
+      <pubDate>Thu, 24 Sep 2015 22:15:50 +0300</pubDate>
+      <category>Политика</category>
+    </item>
+    <item>
+      <title>Attention please, some important news!</title>
+      <link>#</link>
+      <description><![CDATA[The War is over! Good bye!]]></description>
+      <pubDate>Thu, 24 Sep 2015 22:15:04 +0300</pubDate>
+      <category>Политика</category>
+    </item>
+  </chanel>
+</rss>
